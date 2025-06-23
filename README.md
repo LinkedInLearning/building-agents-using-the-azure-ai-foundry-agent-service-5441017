@@ -1,5 +1,5 @@
-# COURSENAME
-This is the repository for the LinkedIn Learning course `course-name`. The full course is available from [LinkedIn Learning][lil-course-url].
+# Building Agents Using the Azure AI Foundry Agent Service
+This is the repository for the LinkedIn Learning course `Building Agents Using the Azure AI Foundry Agent Service`. The full course is available from [LinkedIn Learning][lil-course-url].
 
 ![course-name-alt-text][lil-thumbnail-url] 
 
