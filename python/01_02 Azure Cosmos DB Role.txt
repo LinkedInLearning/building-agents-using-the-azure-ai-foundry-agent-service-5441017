@@ -1,0 +1,26 @@
+# Read access to Azure CosmosDB data
+
+1. Get the role definition ID
+
+$parameters = @{                                                                                                                           
+    ResourceGroupName = "<ResourceGroupName>"                   
+    AccountName = "<Azure CosmosDB Name>"                    
+}
+Get-AzCosmosDBSqlRoleDefinition @parameters
+
+2. Login to Azure and get the Principal ID.
+
+Connect-AzAccount -UseDeviceAuthentication
+Get-AzADUser -SignedIn | Format-List -Property Id, DisplayName, Mail, UserPrincipalName
+
+3. Provide Principal ID the role
+
+$parameters = @{
+    ResourceGroupName = "<Resource Group Name>"
+    AccountName = "<Azure Cosmos DB Name>"
+    RoleDefinitionId = "<Role Definition ID>"
+    PrincipalId = "<Principal ID>"
+    Scope = "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/msdocs-identity-example/providers/Microsoft.DocumentDB/databaseAccounts/msdocs-identity-example-nosql"
+} 
+
+New-AzCosmosDBSqlRoleAssignment @parameters
