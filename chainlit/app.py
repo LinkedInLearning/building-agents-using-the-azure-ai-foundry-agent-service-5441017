@@ -6,6 +6,8 @@ import os
 
 project_endpoint = os.environ["PROJECT_ENDPOINT"]
 agent_id = os.environ["AGENT_ID"]
+print(f"Using Project Endpoint: {project_endpoint}")
+print(f"Using Agent ID: {agent_id}")
 
 # Create an AIProjectClient instance
 project_client = AIProjectClient(
