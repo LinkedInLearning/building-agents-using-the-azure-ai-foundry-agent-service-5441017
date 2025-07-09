@@ -6,8 +6,6 @@ import os
 
 project_endpoint = os.environ["PROJECT_ENDPOINT"]
 agent_id = os.environ["AGENT_ID"]
-print(f"Using Project Endpoint: {project_endpoint}")
-print(f"Using Agent ID: {agent_id}")
 
 # Create an AIProjectClient instance
 project_client = AIProjectClient(
@@ -62,22 +60,22 @@ async def set_starters():
         cl.Starter(
             label="Paris Weather",
             message="What's the weather like in Paris today?",
-            #icon="/public/weather.svg",
+            icon="/public/weather.svg",
             ),
 
         cl.Starter(
             label="Paris Itinerary",
             message="Help me plan a day in Paris based on the weather. What are the must-see attractions?",
-            #icon="/public/plan.svg",
+            icon="/public/airplane.svg",
             ),
         cl.Starter(
             label="Suitcase Shopping",
             message="Provide me a list of suitcases for my trip to Paris.",
-            #icon="/public/suitcase.svg",
+            icon="/public/suitcase.svg",
             ),
         cl.Starter(
             label="Restaurant Recommendations",
             message="Provide me 3 restaurants in Paris that have great pizza.",
-            #icon="/public/eat.svg",
+            icon="/public/food.svg",
             )
         ]
