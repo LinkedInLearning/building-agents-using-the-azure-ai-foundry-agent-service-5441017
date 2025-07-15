@@ -1,36 +1,25 @@
 # Building Agents Using the Azure AI Foundry Agent Service
 This is the repository for the LinkedIn Learning course `Building Agents Using the Azure AI Foundry Agent Service`. The full course is available from [LinkedIn Learning][lil-course-url].
 
+This course provides a comprehensive introduction to the Azure AI Agent Service. You will learn how to create and manage resources, demonstrate the agent features using the Azure AI Foundry Portal, and utilize the Azure AI Agent Python SDK to create and deploy an agent through sample code and hands-on challenges. By the end of the course, you'll have a solid understanding of this powerful tool and how to apply them to real-world scenarios.                                        
+
 ![course-name-alt-text][lil-thumbnail-url] 
 
-_See the readme file in the main branch for updated instructions and information._
-## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+## Folders
+The python folder contains the sample code for this course.
+The project folder contains the code for the course project.
 
-## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
+## Files
+The files are named to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the file named `01_05` corresponds to the first chapter and the fifth video in that chapter. 
 
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
+## Data Files
+Data folder contains the data sets used in the course.
 
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
-    Please commit your changes or stash them before you switch branches.
-    Aborting
+## Instructor
+Ziggy Zulueta
 
-To resolve this issue:
-	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
+Microsoft AI Most Valuable Professional
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+Microsoft Certified Trainer
 
-
-[0]: # (Replace these placeholder URLs with actual course URLs)
-
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQG0eDHsyOSqTA/learning-public-crop_675_1200/B4EZVdqqdwHUAY-/0/1741033220778?e=2147483647&v=beta&t=FxUDo6FA8W8CiFROwqfZKL_mzQhYx9loYLfjN-LNjgA
-
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/ziggy-zulueta?u=104).
