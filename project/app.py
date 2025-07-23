@@ -3,9 +3,14 @@ from azure.ai.projects import AIProjectClient
 from azure.identity import DefaultAzureCredential
 from azure.ai.agents.models import MessageRole
 import os
+from dotenv import load_dotenv
+# Load environment variables from the .env file (if present)
+load_dotenv()
 
 project_endpoint = os.environ["PROJECT_ENDPOINT"]
 agent_id = os.environ["AGENT_ID"]
+print(f"Project Endpoint: {project_endpoint}")
+print(f"Agent ID: {agent_id}")
 
 # Create an AIProjectClient instance
 project_client = AIProjectClient(
